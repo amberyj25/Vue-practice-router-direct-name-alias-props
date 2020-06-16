@@ -23,6 +23,7 @@ export default new VueRouter({
             {
               path: "aboutall",
               name: "aboutall",
+              alias:"about1",
               component: aboutall,
             }, {
               path: "aboutus",
@@ -42,9 +43,10 @@ export default new VueRouter({
             }
           ]
         }, {
-          path: "products",
+          path: "products/:id",
           name: "products",
           component: products,
+          props: true,
         }
       ]
     }
